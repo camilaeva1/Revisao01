@@ -1,0 +1,30 @@
+#Imprime o tipo de variavel
+print(type(5))
+d = 3
+c = 2
+b = 4
+d = c + d
+a = d + 1
+a = a + 1
+print(a)
+#Função print
+print("Égua de novo isso")
+# Escrevendo o valor de uma variável e imprimindo
+print("A variável contem o valor ", a)
+e = 10
+f = 3.14
+print("e contem o valor ", e," e f contêm o valor", f)
+print("O e tem o valor "+ str(e) + " e o f tem valor "+ str(f))
+#formatação da exibição para ponto flutuante
+pi = 3.1415
+r = 7
+area = pi * r * r
+print("Área do círculo de raio %.2f " %r +"é %.2f" %area)
+#Como exibir na tela sem pula linha
+print("3, ", end ="")
+print("4, ", end ="")
+print("5, ")
+#A função input
+print("Informe um numero: ")
+num = input()
+print("O número digitado foi ", num)
