@@ -51,3 +51,13 @@ print(resto1)
 minutos = resto1//60
 resto2 = minutos%60
 print("87426 segundos equivalem a {} h, {} min e {} seg".format(horas, minutos, resto2))
+#Expressões relacionais: fazem uma comparação entre duas expressões e retornam true ou false
+a = True
+print(type(a))
+#imprime <class 'bool'>
+#Operadores relacionais: == (igual), != (diferente), > maior que, >= maior ou igual que, < menor que, <= menor ou igual que
+#Expressões lógicas: realizam operações lógicas (e, ou, não...), and, or, not
+print(8 > 9 and 10 != 2)
+print(14 > 100 or 2 > 1)
+print(not(14 > 100) and not (1 > 2))
+#Comandos condicionais(if, elif, else)
