@@ -35,3 +35,19 @@ print("A soma de {} e {} é: {}".format(n1, n2, n1 + n2))
 #Expressões, // operação truncada
 n = n2//n1
 print(n)
+#// Imprime só a parte inteira
+n = 87426//3600
+#O resultado é 24,2848
+print(n)
+#% imprime o resto da divisão
+a = 5%2
+#resta 1
+print(a)
+#Exercício de aula: converter em horas, minutos e segundos, 87426 segundos
+tempo = int(input("Insira a quantidade de segundos que deseja converter: "))
+horas = tempo//3600
+resto1 = tempo%3600
+print(resto1)
+minutos = resto1//60
+resto2 = minutos%60
+print("87426 segundos equivalem a {} h, {} min e {} seg".format(horas, minutos, resto2))
