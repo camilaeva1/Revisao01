@@ -234,3 +234,12 @@ with open('GFC.csv', 'w') as f:
   write = csv.writer(f)
   write.writerow(colunas)
   write.writerow(linhas)
+
+
+#Laços encaixados
+
+c = int(input("Insira c: "))
+for x1 in range(0, c+1):
+  for x2 in range(0, c+1):
+    if (x1 + x2) == c:
+      print(x1, " + ", x2, " = ", c)
