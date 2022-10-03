@@ -120,3 +120,10 @@ while meupalpite != numero:
     print("Seu palpite está abaixo do número!")
   meupalpite = int(input("Tente novamente! Qual seu palpite? "))
 print("Você acertou, parabéns!")
+#Programa que some n números que o usuário vai inserir
+cont = 0
+n = int(input("Digite quantos números vc vai inserir: "))
+for i in range(n):
+  aux = int(input("Digite um número: "))
+  cont = cont + aux
+print(cont)
