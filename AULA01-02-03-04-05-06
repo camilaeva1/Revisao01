@@ -174,3 +174,28 @@ for i in range(n):
 print(notas1)
 
 
+#O insert insere um elemento numa lista na posição escolhida, assim:
+n = [10, 40, 0, 5]
+n.insert(1, "casa")
+print(n)
+
+#O del remove da lista um elemento
+del n[0]
+print(n)
+
+#mesma coisa o remove, mas aí ele procura o valor a ser removido independente da posição:
+n.remove(5)
+print(n)
+
+#Faça um programa que leia n notas e que imprima a metade da média das notas
+q = int(input("digite quantos valores vc irá inserir: "))
+lista = []
+cont = 0
+for n in range(q):
+  valor = float(input("Insira o valor: "))
+  lista.append(valor)
+  cont = cont + valor
+print(lista)
+print(cont)
+print(cont/2)
+
