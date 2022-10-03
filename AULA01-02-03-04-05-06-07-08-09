@@ -199,3 +199,38 @@ print(lista)
 print(cont)
 print(cont/2)
 
+#função sort, coloca a lista em ordem crescente
+
+lista = [5, 7, 10, 99, 1]
+lista.sort()
+print(lista)
+lista.reverse()
+print(lista)
+print(sorted(lista))
+print(lista[: -2])
+
+
+lista1 = [1,1,1,2,4,3,3,7,7,8,9,9]
+#Encontrando o valor mais frequente
+maisfrequente = max(set(lista1), key = lista1.count)
+print(maisfrequente)
+
+#Encontrando o maior
+maior = max(lista1)
+print(maior)
+
+#Tirar itens repetidos numa lista, trabalha nela como um dicionário
+lista1 = list(dict.fromkeys(lista1))
+print(lista1)
+
+
+#MUITO IMPORTANTE!!!!!!!!!!!!!!!!!!!!!!!
+#SALVAR EM CSV
+
+import csv
+colunas = ['PEIXE', 'PESO', 'BARRACA', 'VALOR POR KG']
+linhas = [['TAMABQUI', 3.2, '45', 20.4], ['PIRARUCU', 4.5, '63', 30], ['FILHOTE', 10.5, '54', 21]]
+with open('GFC.csv', 'w') as f:
+  write = csv.writer(f)
+  write.writerow(colunas)
+  write.writerow(linhas)
