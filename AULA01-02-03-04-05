@@ -105,3 +105,18 @@ for i in range(5, 9):
 #função range com passo:
 for i in range(0, 13, 2):
   print(i)
+#Usar for ou while? Use o for quando vc sabe quantas vezes vai precisar executar o comando dentro do laço, use em listas. Use o whle se precisa realizar algum comando até que seja alcançada a condição ideal(não sabemos quantas execuções vamos precisar pra chegar nessa condição)
+#Jogo de adivinhação
+import random
+numero = random.randrange(1, 100)
+print(numero)
+palpite = 1
+meupalpite = int(input("Qual seu palpite? "))
+while meupalpite != numero:
+  palpite += 1
+  if meupalpite > numero:
+    print("Seu palpite está acima do número!")
+  elif meupalpite < numero:
+    print("Seu palpite está abaixo do número!")
+  meupalpite = int(input("Tente novamente! Qual seu palpite? "))
+print("Você acertou, parabéns!")
