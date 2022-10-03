@@ -85,3 +85,23 @@ while numero <= n:
   print(numero)
   numero += 1
 print("fim")
+#Listas
+lista = ["Olá", 9.9, 5, -3, [10, 20]]
+#Acesso a uma posição na lista
+print(lista[0])
+#Comando for é muito usado com listas
+l = ["Camila", 1, 2, 3, 77]
+for item in l:
+  print(item)
+for k in range(100):
+  print(k)
+for letra in "python":
+  print(letra)
+#função range
+for n in range(10):
+  print(n)
+for i in range(5, 9):
+  print(i)
+#função range com passo:
+for i in range(0, 13, 2):
+  print(i)
