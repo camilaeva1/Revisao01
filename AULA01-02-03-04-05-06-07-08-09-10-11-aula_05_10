@@ -254,3 +254,29 @@ t3 = ('a', 'b', 'c', 'd')
 t4 = t2 + t3
 print(t4)
 print(max(t2))
+#Empacotar e desempacotar
+
+qtd = 1.1
+nome = "carne"
+preco = 22.9
+c = (nome, preco, qtd,)
+
+compras_e = [("arroz", 3.49, 3), ("feijao", 2.99, 2), ("tomate", 1.99, 0.8)]
+for nome_prod, preco, qtdade in compras_e:
+  print(f"Nome: {nome_prod}\tPreço: {preco}\tQuantidade: {qtdade}")
+  
+ 
+ 
+ crg = {"Wanderley": 5.4, "Joelma": 9.8, "Onete": 8.5}
+print(type(crg))
+print(crg["Joelma"])
+print(crg)
+crg["Joelma"] = 4.6
+print(crg)
+for x in crg:
+  print(x)
+for x in crg.values():
+  print(x)
+d = {'a': 0, 'b':1, 'c':2}
+t = d.items()
+print(t)
