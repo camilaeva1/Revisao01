@@ -243,3 +243,14 @@ for x1 in range(0, c+1):
   for x2 in range(0, c+1):
     if (x1 + x2) == c:
       print(x1, " + ", x2, " = ", c)
+
+#TUPLAS E DICIONÁRIOS
+#Por convenção se usa (), e são imutáveis
+#Criação de tuplas: T1 = ()
+t1 = (50,)
+print(type(t1))
+t2 = (3, 2, 7, 4, 1)
+t3 = ('a', 'b', 'c', 'd')
+t4 = t2 + t3
+print(t4)
+print(max(t2))
