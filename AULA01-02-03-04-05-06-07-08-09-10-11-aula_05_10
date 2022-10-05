@@ -280,3 +280,26 @@ for x in crg.values():
 d = {'a': 0, 'b':1, 'c':2}
 t = d.items()
 print(t)
+
+crg = {"Wanderley": 5.4, "Joelma": 9.8, "Onete": 8.5}
+print(type(crg))
+print(crg["Joelma"])
+print(crg)
+crg["Joelma"] = 4.6
+print(crg)
+for x in crg:
+  print(x)
+for x in crg.values():
+  print(x)
+d = {'a': 0, 'b':1, 'c':2}
+t = d.items()
+print(t)
+print(list(crg.items()))
+print(list(crg.keys()))
+print(list(crg.values()))
+print(crg.get("Joelma"))
+
+for nome, numero in crg.items():
+  print(nome, numero, sep=' ')
+ 
+ 
