@@ -301,5 +301,63 @@ print(crg.get("Joelma"))
 
 for nome, numero in crg.items():
   print(nome, numero, sep=' ')
+  
+ Aula 23-11
+  
+import re
+regex = re.compile(r'.ão')
+dados = regex.search('O cão')
+print(dados)
+
+import re
+regex = re.compile(r'.ão')
+dados = regex.search('O 3cão')
+print(dados)
+
+import re
+regex = re.compile(r'.ão')
+dados = regex.search('cão')
+print(dados)
+
+#Classe de caracteres dentro do padrão
  
- 
+import re
+regex = re.compile(r'p[aã]o') #Opções
+dados = regex.search('O pão')
+print(dados)
+
+import re
+regex = re.compile(r'p[aã]o')
+dados = regex.search('paão')
+print(dados) #Dá none
+
+import re
+regex = re.compile(r'Turma[0-9]')
+dados = regex.search('A Turma01 de programação é muito fera')
+print(dados)
+
+import re
+regex = re.compile(r'ABC[^4-9]')
+dados = regex.search('A Turma ABC 103 de programação é muito fera')
+print(dados)
+
+import re
+regex = re.compile(r'ABC[^4-9]')
+dados = regex.search('A Turma ABC103 de programação é muito fera')
+print(dados)
+
+import re
+regex = re.compile(r'AB?C')
+dados = regex.search('ABC')
+print(dados)
+
+import re #O INTERROGAÇÃO É ENVOLVIDO COM OQ PRECEDE ELE
+regex = re.compile(r'AB?C')
+dados = regex.search('AC')
+print(dados)
+
+import re
+m = re.search(r'\w+@\w+\.\w+(\.\w+)?', 'bla yzx abc@icen.ufpa.br las')
+print(m)
+
+
